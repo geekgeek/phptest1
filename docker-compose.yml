@@ -1,0 +1,9 @@
+
+version: "3"
+services:
+    php:
+        ports:
+            - '9999:80'
+        volumes:
+            - '.:/var/www/html/'
+        image: 'php:7.0-apache'
