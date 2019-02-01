@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''git clone https://github.com/geekgeek/phptest1.git
 '''
-        sh 'docker images'
+        sh 'docker-compose up'
       }
     }
   }
