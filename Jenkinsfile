@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh 'docker-compose up'
+        sh 'echo "hello world"'
       }
     }
   }
