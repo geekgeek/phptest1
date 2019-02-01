@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'php:7.0-apache'
+    }
+
+  }
   stages {
     stage('error') {
       steps {
