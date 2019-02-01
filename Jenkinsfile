@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh '/var/run/docker.sock version'
+        sh 'echo "hello world"'
       }
     }
   }
